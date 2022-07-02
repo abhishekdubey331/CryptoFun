@@ -33,7 +33,7 @@ The following diagram shows the structure of this project with 3 layers:
 [5]:  https://github.com/square/retrofit
 
 <br>
-<p align="center">
+<p align="left">
   <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/diagram.png" width="750"/>
 </p>
 <br>
