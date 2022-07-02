@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
-  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/banner.PNG" width="750"/>
+  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/banner.png" width="750"/>
 </p>
 <br>
 
@@ -36,7 +36,7 @@ The following diagram shows the structure of this project with 3 layers:
 
 <br>
 <p align="center">
-  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/package_structure.PNG" width="750"/>
+  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/package_structure.PNG" width="325"/>
 </p>
 <br>
 
