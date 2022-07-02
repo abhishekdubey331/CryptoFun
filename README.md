@@ -25,6 +25,13 @@ The following diagram shows the structure of this project with 3 layers:
 * [Dagger Hilt][4] Dependency injection library for Android.
 * [Retrofit][5] Type-safe REST client for Android to consume RESTful web services.
 
+[0]:  https://developer.android.com/jetpack
+[1]:  https://github.com/Kotlin/kotlinx.coroutines
+[2]:  https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/
+[3]:  https://developer.android.com/jetpack/compose/navigation
+[4]:  https://dagger.dev/hilt/
+[5]:  https://github.com/square/retrofit
+
 <br>
 <p align="center">
   <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/diagram.png" width="750"/>
