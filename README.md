@@ -1,6 +1,14 @@
-# ArtGallery
+# CryptoFun
+
+<br>
+<p align="center">
+  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/banner.PNG" width="750"/>
+</p>
+<br>
+
 
 CryptoFun is a Learning Project 📱 for Applying Android Architecture Components with exploring <b>Jetpack Compose</b>, <b>MVVM</b>, <b>Kotlin Coroutines</b>, <b>Kotlin Flows</b> using <b>Clean Architecture</b> approach.
+
 
 ### Implemented by Clean Architecture
 The following diagram shows the structure of this project with 3 layers:
@@ -28,7 +36,7 @@ The following diagram shows the structure of this project with 3 layers:
 
 <br>
 <p align="center">
-  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/package_structure.png" width="750"/>
+  <img src="https://github.com/abhishekdubey331/CryptoFun/blob/main/package_structure.PNG" width="750"/>
 </p>
 <br>
 
