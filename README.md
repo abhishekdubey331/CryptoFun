@@ -66,7 +66,7 @@ https://api.coinpaprika.com/v1/coins/{coinId}
 
 
 ## License :oncoming_police_car:
-    Copyright 2022 Fernando Prieto Moyano
+    Copyright 2022 Abhishek Dubey
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
