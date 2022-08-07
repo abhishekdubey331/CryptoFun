@@ -5,8 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.jetpack.cryptofun.common.Resource
-import com.jetpack.cryptofun.domain.usecase.get_coins.GetCoinsUseCase
-import com.jetpack.cryptofun.presentation.coin_list.CoinListState
+import com.jetpack.cryptofun.domain.usecase.get_coins.IGetCoinsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -14,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class CoinListViewModel @Inject constructor(
-    private val getCoinsUseCase: GetCoinsUseCase
+    private val getCoinsUseCase: IGetCoinsUseCase
 ) : ViewModel() {
 
     private val _state = mutableStateOf(CoinListState())
@@ -26,7 +25,7 @@ class CoinListViewModel @Inject constructor(
     }
 
     private fun getCoins() {
-        getCoinsUseCase().onEach { result ->
+        getCoinsUseCase.invoke().onEach { result ->
             when (result) {
 
                 is Resource.Loading -> {
