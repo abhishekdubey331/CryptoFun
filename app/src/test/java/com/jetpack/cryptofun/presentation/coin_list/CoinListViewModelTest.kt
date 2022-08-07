@@ -1,9 +1,9 @@
 package com.jetpack.cryptofun.presentation.coin_list
 
-import com.jetpack.cryptofun.BaseViewModelTest
 import com.jetpack.cryptofun.common.Resource
 import com.jetpack.cryptofun.domain.model.Coin
 import com.jetpack.cryptofun.domain.usecase.get_coins.IGetCoinsUseCase
+import com.jetpack.cryptofun.utils.BaseViewModelTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
@@ -20,7 +20,7 @@ class CoinListViewModelTest : BaseViewModelTest() {
     private lateinit var coinListViewModel: CoinListViewModel
 
     @Mock
-    lateinit var getCoinsUseCase: IGetCoinsUseCase
+    private lateinit var getCoinsUseCase: IGetCoinsUseCase
 
     @Test
     fun `test coin list is empty`() = runTest {

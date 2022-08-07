@@ -1,4 +1,4 @@
-package com.jetpack.cryptofun
+package com.jetpack.cryptofun.utils
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import kotlinx.coroutines.Dispatchers
