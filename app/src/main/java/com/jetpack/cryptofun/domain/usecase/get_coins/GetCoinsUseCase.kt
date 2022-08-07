@@ -12,9 +12,9 @@ import javax.inject.Inject
 
 class GetCoinsUseCase @Inject constructor(
     private val repository: CoinRepository
-) {
+) : IGetCoinsUseCase {
 
-    operator fun invoke(): Flow<Resource<List<Coin>>> = flow {
+    override operator fun invoke(): Flow<Resource<List<Coin>>> = flow {
         try {
             emit(Resource.Loading<List<Coin>>())
             val coins = repository.getCoins().map { it.toCoin() }
@@ -25,4 +25,8 @@ class GetCoinsUseCase @Inject constructor(
             emit(Resource.Error<List<Coin>>("Couldn't reach server. Check your internet connection"))
         }
     }
+}
+
+interface IGetCoinsUseCase {
+    fun invoke(): Flow<Resource<List<Coin>>>
 }

@@ -4,6 +4,8 @@ import com.jetpack.cryptofun.common.Constants
 import com.jetpack.cryptofun.data.api.CoinPaprikaApi
 import com.jetpack.cryptofun.data.repository.CoinRepositoryImpl
 import com.jetpack.cryptofun.domain.repository.CoinRepository
+import com.jetpack.cryptofun.domain.usecase.get_coins.GetCoinsUseCase
+import com.jetpack.cryptofun.domain.usecase.get_coins.IGetCoinsUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -32,4 +34,9 @@ object AppModule {
         return CoinRepositoryImpl(api)
     }
 
+    @Provides
+    @Singleton
+    fun providesGetCoinUseCase(repository: CoinRepository): IGetCoinsUseCase {
+        return GetCoinsUseCase(repository)
+    }
 }
